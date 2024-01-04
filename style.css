@@ -452,7 +452,7 @@ section {
   position: relative;
 }
 .contact form {
-  width: 70rem;
+  width: (100%, 70rem);
   text-align: center;
 }
 .contact-btn {
@@ -611,7 +611,18 @@ form textarea:focus {
   }
 }
 @media screen and (max-width: 671px) {
+  html {
+    font-size: 50%;
+  }
   .portfolio-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .contact form .input-div input {
+    width: 100%;
+  }
+  @media screen and (max-width: 380px) {
+    html {
+      font-size: 40%;
+    }
   }
 }
